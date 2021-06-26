@@ -1,0 +1,129 @@
+// COLOR DEFINITION
+// ================================================
+
+
+// GENERAL STYLING
+// ================================================
+html {
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  width: 100%;
+  margin:0;
+  padding:0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+// COMMON
+// ================================================ 
+p {
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+img {
+  // width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+.starburst {
+  display: block;
+  width: 4em;
+  height: 4em;
+  line-height: 1.8em;
+  background: #FF9999;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-45deg);
+  rotation: -45deg;
+  position: relative;
+  top: 2em;
+  left: 2em;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 0 0 3em #FF2F2F, 0 0 4px #FF2F2F;
+  -moz-transition: -moz-transform 0.3s ease;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  }
+  .starburst span {
+  display: block;
+  width: 4em;
+  height: 4em;
+  background: #FF9999;
+  -webkit-transform: rotate(22.5deg);
+  -moz-transform: rotate(22.5deg);
+  rotation: 22.5deg;
+  }
+
+
+.test {
+  font-size: 100px;
+margin: 100px;
+padding: 100px;
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.test2 {
+  // background: skyblue;
+  // font-size: 72px;
+  // font-weight: bold;
+  // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  // color: none;
+}
+.damages {
+  position: relative;
+  margin-left:  100px;
+  
+}
+.damage1 {
+  position: absolute;
+  top: 10px;
+  border-style: solid;
+  border-width: 100px 20px 0 0;
+  border-color: #007bff transparent transparent transparent;
+  transform: rotate(-22.5deg);
+}
+
+.damage2 {
+  position: absolute;
+top: -100px;
+border-style: solid;
+border-width: 0 2px 100px 20px;
+border-color: transparent transparent #007bff transparent;
+}
+.damage3 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 22px 100px 0 0;
+  border-color: #007bff transparent transparent transparent;
+}
+.damage4 {
+  position: absolute;
+top: 50px;
+border-style: solid;
+border-width: 22px 0 0 100px;
+border-color: transparent transparent transparent #007bff;
+
+}
+.damage {
+
+}

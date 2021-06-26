@@ -1,0 +1,99 @@
+.c-spark {
+    // position: relative;
+}
+
+.box1 {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    margin-top: 100px;
+    width: 20px;
+    height: 5px;
+    background: orange;
+    border-radius: 50%;
+    animation: move1 5s .5s 3 forwards;
+    z-index: 200;
+    // opacity: 0;
+    // transform: rotate(100deg);
+    
+}
+@keyframes move1 {
+
+    100% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+.box2 {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    margin-top: 100px;
+    width: 20px;
+    height: 5px;
+    background: red;
+    // border-radius: 50%;
+    animation: move2 4s .6s 3 forwards;
+    z-index: 200;
+    opacity: 0;
+    transform: rotate(45deg);
+}
+@keyframes move2 {
+    0% {
+        // transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(150px) translateY(100px);
+        // opacity: ;
+    }
+}
+.box3 {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    margin-top: 100px;
+    width: 20px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    animation: move3 .5s .4s 3 forwards;
+    z-index: 200;
+    opacity: 0;
+}
+@keyframes move3 {
+    0% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(200px) rotate(-45deg) ;
+        opacity: 0;
+    }
+}
+.box4 {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    margin-top: 100px;
+    width: 20px;
+    height: 10px;
+    background: orange;
+    border-radius: 50%;
+    animation: move4 .5s .5s 3 forwards;
+    z-index: 200;
+    opacity: 0;
+}
+@keyframes move4 {
+    0% {
+        transform: none;
+        opacity: 1;
+    }
+    80% {
+        transform: rotate(-5deg) translateX(200px);
+    }
+    100% {
+        // transform: translateX(200px);
+        opacity: 0;
+    }
+}

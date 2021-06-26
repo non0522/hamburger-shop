@@ -1,0 +1,15 @@
+.c-eva {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 170px;
+    right: 50px;
+    animation: attack 2.5s 2.7s forwards;
+    z-index: 100;
+}
+@keyframes attack {
+    0%   {transform: none;}
+    20%  {transform: rotate(-5deg) translateX(-300px) translateY(-50px);}
+    90%  {transform: rotate(-5deg) translateX(-300px) translateY(-50px);}
+    100% {transform: rotate(-5deg) translateX(-250px) translateY(-30px);}
+}

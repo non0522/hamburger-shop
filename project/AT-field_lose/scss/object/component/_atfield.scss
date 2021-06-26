@@ -1,0 +1,94 @@
+@mixin hexagon{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 80px;
+    transform: rotateX(-10deg) rotateY(70deg);
+    &::before {
+      display: block;
+      padding-top: 173.205080757%;  /* 3 / √3 * 100 */
+      content: '';
+    }
+}
+
+@mixin hexagon-inner {   
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+
+@mixin hexagon-inner-deco {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    content: '';
+    background: rgb(252,70,3);
+    box-shadow: 0 0 1px #ffa500, 0 0 40px #ffa500, 0 0 40px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 60px #ff8d00, 0 0 98px #ff0000;
+}
+
+
+.c-atfield {
+    // display: none;
+    position: absolute;
+    top: 60px;
+    left: 180px;
+    width: 300px;
+    height: 0px;
+    animation: dropdown 1s 7.5s forwards, shake .1s 8.2s 25;
+    overflow: hidden;
+    z-index: 100;
+    &__hexagon1 {
+        @include hexagon; 
+    }
+    &__hexagon2 {
+        @include hexagon; 
+        top: -120px;
+        left: 10px;
+        width: 60px;
+        transform: rotateX(-10deg) rotateY(70deg);
+    }
+    &__hexagon3 {
+        @include hexagon; 
+        top: -205px;
+        left: 20px;
+        width: 40px;
+        transform: rotateX(-10deg) rotateY(70deg);
+    }
+}
+@keyframes dropdown {
+    0% {
+        // display: block;
+        // height: 0px;
+        opacity: 0;
+    }
+    100% {
+        height: 300px;
+        opacity: 1;
+    }
+}
+
+.c-hexagon {
+    &__inner-1 {
+        @include hexagon-inner;
+    }
+    &__inner-2 {
+        @include hexagon-inner;
+        transform: rotate(120deg);
+    }
+    &__inner-3 {
+        @include hexagon-inner;
+        transform: rotate(-120deg);
+    }
+    &__inner-1::before, &__inner-2::before, &__inner-3::before {
+        @include hexagon-inner-deco;
+        top: 0;     
+    }
+    &__inner-1::after, &__inner-2::after, &__inner-3::after  {
+        @include hexagon-inner-deco;
+        bottom: 0;  
+    }
+}

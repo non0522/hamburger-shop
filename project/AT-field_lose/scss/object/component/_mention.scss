@@ -1,0 +1,78 @@
+.c-mention {
+    background-image: url(/images/mention.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    animation: popup 1s;
+
+    &__charactor {
+        background-image: url(/images/shinji1.png);
+        width: 75px;
+        height: 78px;
+        margin-top: 25px;
+        margin-left: 37px;
+        animation: shinji2 0s 7.8s forwards;
+    }
+    @keyframes shinji2 {
+        0% {
+            background-image: url(/images/shinji1.png);
+        }
+        100% {
+            background-image: url(/images/shinji2.png);
+        }
+    }
+
+    &__text {
+        margin-top: 25px;
+        margin-left: 37px;
+        & .name {
+            color: white;            
+        }
+    }
+}
+@keyframes popup {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
+
+// jQuery用==============================
+.typ {
+    opacity: 0;
+    color: white; 
+    animation: erase 0s 7.8s forwards;
+}
+@keyframes erase {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.typ span {
+    opacity: 0;
+}
+.typ2 {
+    opacity: 0;
+    color: white; 
+    position: absolute;
+    top: 48px;
+}
+.typ2 span {
+    opacity: 0;
+}

@@ -1,0 +1,100 @@
+.p-bg {
+    width: 600px;
+    height: 450px;
+    background: url(/images/bg-fight.jpeg) repeat-x;
+    background-position: 0 0;
+    animation: bgroop 10s linear infinite;
+    position: relative;
+    top: 86px;
+    left: 82px;
+    border-radius: 3%;
+    overflow: hidden;
+}
+@-webkit-keyframes bgroop {
+    from {
+        background-position: 0  0;
+    }
+    to {
+        background-position: -700px 0;
+    }
+}
+@keyframes bgroop {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -700px 0;
+    }
+}
+
+.c-bg--white {  
+    width: 800px;
+    height:800px;
+    border-radius: 50%;
+    background-color: white;
+    font-size:36px;
+    position: absolute;
+    top: -180px;
+    left: -100px;
+    // display:flex;
+    // justify-content:center;
+    // align-items:center;
+    // text-align:center;
+    transform: scale(0);/*非表示にしておく*/
+    animation: extension 1s 12s forwards;
+    z-index: 200;
+}
+@keyframes extension{
+  0%{
+    transform: scale(0);    
+  }
+  100%{
+    transform: scale(1);    
+  }
+}
+
+.my-text {
+    font-size: 90px;
+    font-weight: bold;
+    font-family: Arial;
+    fill: #fff;
+    stroke: #65FF01;
+    animation: text-move 3s 15s ease-out forwards;
+    stroke-dasharray: 300;
+    opacity: 0;
+}
+@keyframes text-move {
+    0% { 
+        stroke-dashoffset: 300;
+        fill: none;
+        opacity: 1;
+    }
+    90% { 
+        fill: #411445;
+    }
+    100% { 
+        stroke-dashoffset: 0;
+        fill: #fff;
+        stroke: #fff;
+        opacity: 1;
+    }
+}
+.bg {
+    fill: #411445;
+    animation: gradually 2s 13s forwards;
+    z-index: 1000;
+    opacity: 0;
+}
+@keyframes gradually {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.svg {
+    position: absolute;
+    z-index: 300;
+}

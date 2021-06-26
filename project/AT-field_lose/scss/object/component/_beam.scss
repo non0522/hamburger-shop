@@ -1,0 +1,51 @@
+.c-beam {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 120px;
+    top: 200px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    animation: beam 3s 7.8s  forwards, beam-shake .1s  8s 30;
+    z-index: 100;
+}
+@keyframes beam {
+    0% {
+        transform: none;
+    }
+    3% {
+        width: 40px;
+        height: 30px;
+        transform: translateX(50px);
+    }
+    5% {
+        width: 230px;
+        height: 40px;
+        transform: translateX(0px);
+        opacity: 1;
+        border-radius: 10% 50% 50% 10%;
+    }
+    95% {
+        width: 230px;
+        height: 40px;
+        transform: translateX(0px);
+        opacity: 1;
+        border-radius: 10% 50% 50% 10%;
+    }
+    100% {
+        width: 1000px;
+        opacity: 1;
+        height: 40px;
+    }
+    
+}
+@keyframes beam-shake {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(1px, 2px) rotateZ(0deg)}
+    50% {transform: translate(0px, 1px) rotateZ(0deg)}
+    75% {transform: translate(1px, 0px) rotateZ(0deg)}
+    100% {transform: translate(0px, -1px) rotateZ(0deg)}
+    
+}
