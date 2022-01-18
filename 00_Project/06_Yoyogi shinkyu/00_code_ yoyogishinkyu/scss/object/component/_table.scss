@@ -1,0 +1,66 @@
+.c-table--access {
+    font-size: 0.8rem;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+    @include responsive(pc) {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    tr {
+        // display: block;
+        border-bottom: #D9D9D9 1px solid;
+        
+        td {
+            padding: 10px 5px;
+            line-height: 1.3rem;
+            
+            &:nth-child(1) {
+                vertical-align: middle;
+            }
+            &:nth-child(2) {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+}
+
+.c-table--hours {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+    @include responsive(pc) {
+        font-size: 0.9rem;
+    }
+
+    tr {
+        border-top: #D9D9D9 1px solid;
+        border-bottom: #D9D9D9 1px solid;
+
+        th {
+            font-weight: inherit;
+            text-align: center;
+            padding: 16px 8px;
+            &:not(:last-of-type)  {
+                border-right: #D9D9D9 1px solid;
+            }
+        }
+
+        td {
+            padding: 16px 8px;
+            &:first-child {
+                padding: 16px 0;
+            }
+            &:not(:last-of-type)  {
+                border-right: #D9D9D9 1px solid;
+                // width: 50px;
+            }
+
+        }
+
+    }
+}

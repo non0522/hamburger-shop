@@ -1,0 +1,52 @@
+.p-about {
+    font-size: 0.8rem;
+    margin: 0 20px;
+    padding-bottom: 60px;
+    @include responsive(pc) {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    &__wrapper {
+
+        @include responsive(pc) {
+            text-align: left;
+
+        }
+    }
+
+    &__desc {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        padding-bottom: 20px;
+
+        @include responsive(pc){
+            padding: 2rem 30px;
+        }
+    }
+    ul {
+        padding-top: 2.5rem;
+        padding-left: 5vw;
+        @include responsive(pc) {
+            padding: 0 30px;
+        }
+
+        li {
+            padding-bottom: 24px;
+            line-height: 1rem;
+
+            h5 {
+                font-size: 0.9rem;
+                padding-bottom: 10px;
+            }
+            p {
+                text-indent: 1rem;
+                @include responsive(pc) {
+                    text-indent: 0;
+                }
+            }
+        }
+    }
+}

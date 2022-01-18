@@ -1,0 +1,29 @@
+.p-footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;  
+
+    &__title {
+        p:first-of-type {
+            font-size: 0.6rem;
+            @include responsive(pc) {
+                font-size: 0.8rem;
+            }
+        }
+        p:nth-child(2) {
+            font-size: 0.8rem;
+            @include responsive(pc) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__copyright {
+        padding-top: 10px;
+        font-size: 0.6rem;
+        @include responsive(pc) {
+            font-size: 0.8rem;
+        }
+    }
+}

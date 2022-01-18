@@ -1,0 +1,47 @@
+.p-top {
+    background-color: #fff;
+    // width: 100%;
+    // margin: 0 60px;
+    &__hero {
+        position: relative;
+        padding-bottom: 20px;
+
+        &__text {
+            position: absolute;
+        }
+        p:nth-child(3) {
+            top: 2%;
+            right: 5%;
+            @include responsive(pc) {
+                color: #fff;
+                top: 3%;
+                right: 75%;
+            }
+        }
+        p:nth-child(4) {
+            top: 7%;
+            right: 25%;
+            @include responsive(pc) {
+                color: #fff;
+                top: 5%;
+                right: 85%;
+            }
+        }
+    }
+
+    &__intro {
+        padding: 0 20px;
+        background-color: #fff;
+        text-align: center;
+        @include responsive(pc) {
+            margin: 0 auto;
+            width: 60%;
+        }
+
+        &__desc {
+            // margin: 0 40px 0;
+            line-height: 3rem;
+            padding-bottom: 60px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.p-info {
+    padding: 0 20px 60px;
+    @include responsive(pc) {
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    &__access {
+        padding-bottom: 30px;
+        h4 {
+            margin-bottom: 0;
+            @include responsive(pc) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__hours {
+        h4 {
+            margin-bottom: 20px;
+            @include responsive(pc) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
